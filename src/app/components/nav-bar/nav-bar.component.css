@@ -1,0 +1,120 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: tan;
+    box-sizing: border-box;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 5px 100px;
+}
+
+/* header .sticky
+{
+    padding: 5px 100px;
+    background: blue;
+} */
+
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition:  0.6s;
+}
+
+header ul 
+{
+    position: absolute;
+    /* margin: 0px 0px; */
+    left: 22em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a 
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+form {
+    position: relative;
+    left: 10px;
+    width: 12em;
+    margin: 0 0 0 30em;
+}
+
+input, button
+{
+    position: relative;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+  
+input
+{
+    width: 15em;
+    height: 42px;
+    padding: 0 10px;
+    border: 2px solid rgb(191, 152, 101);
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    background: rgb(238, 212, 176);
+    color: gray;
+}
+
+button
+{
+    position: absolute; 
+    top: 0px;
+    right: -40px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: rgb(140, 112, 73);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:before
+{
+    content: "S";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: white;
+}
+
+/* header.sticky ul li a
+{
+    color: chartreuse;
+} */
