@@ -1,38 +1,38 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import * as moment from "moment";
-import { User } from './user'
+import * as moment from 'moment';
+import { User } from './user';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class AuthService {
 
   constructor(
     private http: HttpClient
   ) { }
 
-  login(name:string, password:string) {
-    return this.http.post<User>('/api/login', {name, password})
+  login(name: string, password: string): void {
+    // return this.http.post('/api/login', {name, password});
   }
+  /*
+    private setSession(authResult) {
 
-  private setSession(authResult) {
+    }
 
-  }
+    logout() {
 
-  logout() {
+    }
 
-  }
+    public isLoggedIn() {
 
-  public isLoggedIn() {
+    }
 
-  }
+    public isLoggedOut() {
 
-  public isLoggedOut() {
+    }
 
-  }
+    getExpiration() {
 
-  getExpiration() {
+    }
 
-  }
+   */
 }

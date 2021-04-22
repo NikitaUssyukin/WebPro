@@ -21,21 +21,13 @@ export class LoginComponent implements OnInit {
     private router: Router
   ) { }
 
-  login() {
-    const val = this.loginForm.value;
-
-    if (val.name && val.password) {
-      this.authService.login(val.name, val.password).subscribe(
-        () => {
-          console.log("Login succesfull");
-          this.router.navigateByUrl('/');
-        }
-      );
-    }
-  }
 
   onSubmit(): void {
     console.warn('Your credentials have been submitted', JSON.parse(JSON.stringify(this.loginForm.getRawValue(), null, 12)));
+    const val = this.loginForm.value;
+    if (val.name && val.password) {
+      this.authService.login(val.name, val.password);
+    }
     this.loginForm.reset();
   }
 
