@@ -36,12 +36,7 @@ export class LoginComponent implements OnInit {
         name: this.f.name.value,
         password: this.f.password.value
       }
-    )
-      ._subscribe(success => {
-        if (success) {
-          this.router.navigate(['']);
-        }
-      });
+    );
   }
 
   ngOnInit(): void {

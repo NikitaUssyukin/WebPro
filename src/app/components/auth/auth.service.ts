@@ -44,26 +44,5 @@ export class AuthService {
   }
 
 
-  /*
-    private setSession(authResult) {
 
-    }
-
-    logout() {
-
-    }
-
-    public isLoggedIn() {
-
-    }
-
-    public isLoggedOut() {
-
-    }
-
-    getExpiration() {
-
-    }
-
-   */
 }
